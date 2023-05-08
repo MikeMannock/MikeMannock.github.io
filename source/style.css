@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to right, #ffffff, #eeefff, #e5e5ff, #cbd1ff);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  margin: 20px;
+}
+
+.table-primary {
+  text-align: center;
+}
+
+input {
+  text-align: right;
+  max-width: 100px;
+  background-color: rgb(255, 243, 205);
+  border-width: 0.5px;
+  border-color: rgb(255, 243, 205);
+}
+
+.table-warning {
+  text-align: center;
+} 
+
+.right-table-column {
+  text-align: right;
+}
+
+select {
+  background-color: rgb(255, 243, 205);;
+}
