@@ -45,3 +45,12 @@ input {
 select {
   background-color: rgb(255, 243, 205);;
 }
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column
+  }
+  .right-column {
+    align-items: center
+  }
+}
