@@ -78,6 +78,8 @@ function calculationAfrica() {
 
     const monthNames = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
     const monthBonusNames = ['Май', 'Июнь', 'Июль', 'Август', 'Сентябрь']
+    const table = document.querySelector('#resultTable')
+    table.innerHTML = ''
 
     for (let i = 0; i <= monthsCount; i++) {
 
@@ -94,7 +96,7 @@ function calculationAfrica() {
         let isLastMonth = i === monthsCount
         let currency = currency2024
 
-        const table = document.querySelector('#resultTable')
+        
         const newRow = document.createElement('tr')
         const monthCell = document.createElement('td')
         const totalCell = document.createElement('td')
@@ -149,9 +151,10 @@ function calculationAfrica() {
 
         }
 
+
         monthCell.textContent = `${monthName} ${currentYear}`
         newRow.appendChild(monthCell)
-        monthCell.style.textAlign = 'center'
+        monthCell.style.textAlign = 'left'
         monthCell.style.width = '344.88px'
         totalCell.textContent = salaryTotal.toFixed(2)
         totalCell.style.textAlign = 'center'
@@ -159,6 +162,5 @@ function calculationAfrica() {
         table.appendChild(newRow)
 
     }
-    monthCell.innerHTML = ''
-    totalCell.innerHTML = ''
+
 }
