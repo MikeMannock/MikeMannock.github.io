@@ -154,8 +154,8 @@ function calculationAfrica() {
 
         monthCell.textContent = `${monthName} ${currentYear}`
         newRow.appendChild(monthCell)
-        monthCell.style.textAlign = 'left'
-        monthCell.style.width = '344.88px'
+        monthCell.style.textAlign = 'center'
+        monthCell.style.width = '50%'
         totalCell.textContent = salaryTotal.toFixed(2)
         totalCell.style.textAlign = 'center'
         newRow.appendChild(totalCell)

@@ -13,7 +13,7 @@
         <div class="left-column">
             <table class="table table-bordered table-hover">
                     <tr>
-                      <th colspan="3" class="table-primary">Гарантированная ЗП</th>
+                      <th colspan="3" class="table-secondary">Гарантированная ЗП</th>
                     </tr>
                     <tr>
                       <td colspan="2">Оклад</td>
@@ -39,7 +39,7 @@
                         <th class="right-table-column"><div id="outputGaranteePayment"></div></th>
                     </tr>
                     <tr>
-                        <th colspan="3" class="table-primary">Доплаты</th>
+                        <th colspan="3" class="table-secondary">Доплаты</th>
                     </tr>
                     <tr>
                         <td>Английский (%)</td>
@@ -57,7 +57,7 @@
                         <td class="right-table-column"><div id="outputResultStimulating"></div></td>
                     </tr>
                     <tr>
-                        <td colspan="2">Персональная надбавка (руб)</td>
+                        <td colspan="2">Персональная надбавка</td>
                         <td class="table-warning"><input type="number" id="personalBonus" value="0"></td>
                     </tr>
                     <tr>
@@ -69,26 +69,26 @@
                         <td class="right-table-column"><div id="outputTotalBonus"></div></th>
                     </tr>
                     <tr>
-                        <th colspan="2" class="table-primary">Гарантия + доплаты - налог 13%</th>
-                        <th class="table-primary" style="text-align: right;"><div id="outputTotalSalary"></div></th>
+                        <th colspan="2" class="table-secondary">Гарантия + доплаты - налог 13%</th>
+                        <th class="table-secondary" style="text-align: right;"><div id="outputTotalSalary"></div></th>
                     </tr>
                     <tr>
-                        <td>Сезонные - налог 13%</td>
+                        <td>Сезонные -13%</td>
                         <td class="table-warning"><input type="number" id="percentSeason" value="30"></td>
                         <td class="right-table-column"><div id="outputResultSeason"></div></td>
                     </tr>
                     <tr>
-                        <td>Доплата за 4й -13%</td>
+                        <td>Доплата 4й -13%</td>
                         <td class="table-warning"><input type="number" id="percent4Month" value="35"></td>
                         <td class="right-table-column"><div id="outputResult4Month"></div></td>
                     </tr>
                     <tr>
-                        <td>Доплата за 5й -13%</td>
+                        <td>Доплата 5й -13%</td>
                         <td class="table-warning"><input type="number" id="percent5Month" value="70"></td>
                         <td class="right-table-column"><div id="outputResult5Month"></div></td>
                     </tr>
                     <tr>
-                        <th colspan="2">Выберите суточные в долларах:</th>
+                        <th colspan="2">Выберите суточные:</th>
                         <td class="table-warning"><select id="dailyAllowanceUSD">
                           <option value="144">144</option>
                           <option value="116">116</option>
@@ -102,9 +102,12 @@
                         </td>
                     </tr>
                     <tr>
-                        <th>Даты командировки</th>
-                        <th class="table-warning"><input type="date" id="startDate" value="2023-02-23"></th>
-                        <th class="table-warning"><input type="date" id="endDate" value="2023-07-18"></th>
+                        <th>Дата прибытия:</th>
+                        <th class="table-warning" colspan="2"><input type="date" id="startDate" value="2023-02-23"></th>
+                    </tr>
+                    <tr>
+                        <th>Дата убытия:</th>
+                        <th class="table-warning" colspan="2"><input type="date" id="endDate" value="2023-07-18"></th>
                     </tr>
             </table>
             <button onclick="calculationAfrica()" type="button" class="btn btn-primary">Рассчитать</button>
@@ -112,14 +115,13 @@
         <div class="right-column">
             <table class="table table-bordered table-hover">
                 <tr>
-                    <th colspan="3" class="table-primary">Результат</th>
+                    <th colspan="3" class="table-secondary">Результат</th>
                 </tr>
                 <tr>
-                    <th class="table-primary">Месяц</th>
-                    <th class="table-primary">Всего</th>
+                    <th id="monthResult" class="table-secondary">Месяц</th>
+                    <th class="table-secondary">Всего</th>
                 </tr>
             <table id="resultTable" class="table table-bordered table-hover">
-
             </table>
         </div>
     </div>
