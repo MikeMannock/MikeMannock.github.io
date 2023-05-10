@@ -169,7 +169,7 @@ function calculationAfrica() {
 
     }
     
-    textCell.textContent = `Сумма за всё: `
+    textCell.textContent = `За весь период: `
     textCell.style.fontWeight = 'bold'
     textCell.style.textAlign = 'center'
     textCell.style.width = '50%'
