@@ -2,11 +2,6 @@
   margin: 0;
 }
 
-html, body {
-  height: 100%;
-  background: linear-gradient(135deg, #ffffff, #dbdbdb);
-}
-
 span {
   font-size: large;
   font-weight: bold;
