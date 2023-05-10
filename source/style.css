@@ -46,8 +46,9 @@ input {
 }
 
 input[type="date"] {
-  min-width: 150px;
+  min-width: 130px;
   text-align: center;
+  border: none;
 }
 .table-warning, .table-light {
   text-align: center;
