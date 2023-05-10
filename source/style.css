@@ -47,7 +47,7 @@ input {
 
 input[type="date"] {
   min-width: 130px;
-  text-align: right;
+  text-align: center;
   border: none;
 }
 .table-warning, .table-light {
